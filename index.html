@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Business Loan Form</h1>
+        <form id="BusinessForm" action="display.php" method="POST">
+            <label for="BusinessName">Business Name:</label>
+            <input type="text" id="BusinessName" name="BusinessName" required>
+
+            <label for="contactNumber">Contact Number:</label>
+           <input type="tel" id="contactNumber" name="contactNumber" pattern="[0-9]{10}" placeholder="1234567890" required>
+
+           <label for="email">Email:</label>
+           <input type="email" id="email" name="email" placeholder="example@example.com" required>
+
+
+            <label for="Loanamount">Loan amount:</label>
+            <input type="text" id="Loanamount" name="Loanamount" required>
+
+            <label for="TaxID">Tax ID:</label>
+            <input type="text" id="TaxID" name="TaxID" required>
+
+            <label for="EstablishedDate">Established Date:</label>
+            <input type="date" id="EstablishedDate" name="EstablishedDate" required>
+
+            <label for="LoanType">Loan Type:</label>
+            <select id="LoanType" name="LoanType" required>
+                <option value="">--Select--</option>
+                <option value="Small Business Loan">Small Business Loan</option>
+                <option value="Equipment Financing">Equipment Financing</option>
+                <option value="Startup Loan">Startup Loan</option>
+                <option value="other">other</option>
+            </select>
+
+            <button type="submit" id="submitBtn">Submit</button>
+            <button type="submit" id="submitBtn">Clear</button>
+        </form>
+    </div>
+</body>
+</html>
