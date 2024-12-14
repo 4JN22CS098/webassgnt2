@@ -9,7 +9,7 @@ $(document).ready(function() {
         const LoanType = $("LoanType").val();
 
         if (!BusinessName || !Loanamount || !AccountNumber || !Dateofbirth || !LoanType) {
-            alert("Please fill out all fields!");
+            alert("Please fill out this fields!");
             event.preventDefault();
         }
     });
