@@ -1,16 +1,16 @@
 $(document).ready(function() {
     $("#submitBtn").click(function(event) {
-        const BusinessName = $("#BusinessName").val();
-        const Loanamount = $("#contactNumber").val();
-        const Loanamount= $("#email").val();
-        const AccountNumber = $("#Loanamount").val();
-        const AccountNumber = $("#AccountNumber").val();
-        const Dateofbirth = $("#Dateofbirth").val();
-        const LoanType = $("LoanType").val();
+        // Fetch values from the input fields
+        const businessName = $("#BusinessName").val();
+        const loanAmount = $("#Loanamount").val();
+        const accountNumber = $("#AccountNumber").val();
+        const dateOfBirth = $("#Dateofbirth").val();
+        const loanType = $("#LoanType").val(); // Correct selector
 
-        if (!BusinessName || !Loanamount || !AccountNumber || !Dateofbirth || !LoanType) {
-            alert("Please fill out this fields!");
-            event.preventDefault();
+        // Validate if all fields are filled
+        if (!businessName || !loanAmount || !accountNumber || !dateOfBirth || !loanType) {
+            alert("Please fill out all the fields!");
+            event.preventDefault(); // Prevent form submission
         }
     });
 });
