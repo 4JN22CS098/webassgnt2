@@ -7,12 +7,12 @@ $(document).ready(function() {
         const LoanAmount = $("#Loanamount").val();
         const TaxID = $("#TaxID").val();
         const EstablishedDate = $("#EstablishedDate").val();
-        const LoanType = $("#LoanType").val(); // Correct selector
+        const LoanType = $("#LoanType").val();
 
         // Validate if all fields are filled
         if (!BusinessName || !contactNumber || !email || !LoanAmount || !TaxID || !EstablishedDate || !LoanType) {
             alert("Please fill out all the fields!");
-            event.preventDefault(); // Prevent form submission
+            event.preventDefault();
         }
     });
 });
